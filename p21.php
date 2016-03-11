@@ -25,27 +25,18 @@
 
 	$a='<br>';   
 
-    $regis= new registration();
-
-    $name=$_GET['name'];
+    $regis = new registration();
     
-    $age=$_GET['age'];
-
-    $gender=$_GET['gender'];
-
-    $address=$_GET['address'];
-
-    $qualification=$_GET['qualification'];
-
-    $regis->nname=$name;
+    $regis->nname=$name=$_GET['name'];
 	
-	$regis->aage=$age;
+	$regis->aage=$age=$_GET['age'];
 	
-	$regis->ggender=$gender;
+	$regis->ggender=$gender=$_GET['gender'];
 
-	$regis->aaddress=$address;
+	$regis->aaddress=$address=$_GET['address'];
 	
-	$regis->qqualification=$qualification;
+	$regis->qqualification=$qualification=$_GET['qualification'];
+
 
 	echo $regis->nname.$a.$regis->aage;
 
